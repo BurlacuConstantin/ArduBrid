@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>dorange
+    <color name="colorAccent">#D81B60</color>
+    <color name="dorange">#FC7148</color>
+    <color name="worange">#ffb300</color>
+    <color name="background">#272E38</color>
+    <color name="PrimaryText">#bababa</color>
+    <color name="SecondaryText">#d6d6d6</color>
+    <color name="ButtonColor">#202731</color>
+    <color name="white">#ffffff</color>
+    <color name="DetailBlock">#2c364a</color>
+    <color name="TextColor">#cccccc</color>
+    <color name="VoiceColor">#f04716</color>
+</resources>

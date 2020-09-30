@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/listview_shape">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/linearLayout2">
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_alignTop="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="2dp"
+        android:text="Medium Text"
+        android:textColor="@color/dorange"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/subtitle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:text="TextView"
+        android:textColor="@color/SecondaryText"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/subtitle2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle1"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="normal"
+        android:padding="2dp"
+        android:layout_marginLeft="90dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChooseIP"
+    android:background= "@color/background">
+
+    <ImageView
+        android:id="@+id/detail_block"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:background="@color/DetailBlock"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/device_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your local IP :"
+        android:textColor="@color/dorange"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/device_ip_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/device_ip"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/external_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device_ip"
+        android:text="External IP :"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:textColor="@color/dorange"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/external_ip_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/external_ip"
+        android:layout_below="@id/device_ip_show"
+        android:layout_marginStart="4dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/this_ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/external_ip"
+        android:text="This SSID :"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:textColor="@color/dorange"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/this_ssid_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/this_ssid"
+        android:layout_below="@id/external_ip_show"
+        android:layout_marginStart="4dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/dhcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/this_ssid"
+        android:text="DHCP Server :"
+        android:textColor="@color/dorange"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/dhcp_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/dhcp"
+        android:layout_below="@id/this_ssid_show"
+        android:text=""
+        android:layout_marginStart="4dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/wifi_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dhcp"
+        android:text="Wifi Speed :"
+        android:textColor="@color/dorange"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/wifi_speed_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/wifi_speed"
+        android:layout_below="@id/dhcp_show"
+        android:layout_marginStart="4dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:clickable="false"/>
+
+
+
+
+    <ListView
+        android:id="@+id/list_recent_connections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/create_connection"
+        android:layout_below="@id/detail_block"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:divider="@color/background"
+        android:dividerHeight="5dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/create_connection"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Rescan network devices"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:background="@color/ButtonColor"
+        android:textColor="@color/TextColor" />
+
+
+
+
+    <!--
+    <TextView
+        android:id="@+id/recent_connections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="189dp"
+        android:text="Recent Connections"
+        android:textColor="@color/dorange"
+        android:textIsSelectable="false"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+        -->
+
+
+</RelativeLayout>

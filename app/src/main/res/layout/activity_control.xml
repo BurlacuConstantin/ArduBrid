@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:background="@color/DetailBlock"
+        android:clickable="false"/>
+
+    <ImageView
+        android:id="@+id/esp_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mcu"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/esp_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/esp_icon"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="9dp"/>
+
+    <TextView
+        android:id="@+id/esp_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/esp_ip"
+        android:layout_toEndOf="@id/esp_icon"
+        android:layout_marginStart="6dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="9dp"/>
+
+    <TextView
+        android:id="@+id/esp_vendor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/esp_icon"
+        android:layout_below="@id/esp_mac"
+        android:layout_marginStart="6dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="9dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/esp_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp">
+
+        <TextView
+            android:id="@+id/relay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Relay 1"
+            android:textColor="@color/TextColor"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/relay1_off"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/button_control_off"
+            android:text="OFF"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/relay1_on"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay1"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_control_on"
+            android:text="ON"
+            android:textStyle="bold"
+            android:textColor="@color/TextColor"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/relay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay1_off"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:text="Relay 2"
+            android:textColor="@color/TextColor"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/relay2_off"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/button_control_off"
+            android:text="OFF"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/relay2_on"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay2"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_control_on"
+            android:text="ON"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/relay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/relay2_off"
+            android:layout_marginTop="11dp"
+            android:text="Relay 3"
+            android:textColor="@color/TextColor"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/relay3_off"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay3"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/button_control_off"
+            android:text="OFF"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/relay3_on"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay3"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_control_on"
+            android:text="ON"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/relay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/relay3_off"
+            android:layout_marginTop="11dp"
+            android:text="Relay 4"
+            android:textColor="@color/TextColor"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/relay4_off"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay4"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/button_control_off"
+            android:text="OFF"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/relay4_on"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relay4"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_control_on"
+            android:text="ON"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/voice_recognition"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/relay4_off"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_mic" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
